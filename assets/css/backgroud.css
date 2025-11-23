@@ -1,12 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: linear-gradient(135deg, #fde3e3 0%, #ffffff 100%);
+    background-color: #181818;
     min-height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "koboto", sans-serif;
 }
-h1 {
-    color: #d21919;
+
+.cabecalho {
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, rgb(250, 250, 250) 0%, #ffffff 100%);
+    
 }
+
+.cabecalho__logo {
+    width: 150px;
+}
+
+.input_text {
+    width: 400px;
+    height: 20px;
+    outline: none;
+}
+
+.itens {
+    padding: 0.5% 1.5%;
+    display: flex;
+    justify-content: space-between;    
+    gap: 5px;
+}
+
+.itens__especificos {
+    font-family: 'koboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 1%  ;
+    width: 250px;
+    height: 25px;
+    background-color: #b81515;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.itens__especificos:hover {
+    background-color: #ce4444;
+    cursor: pointer;
+}
+
+
+
+
+
 a {
     display: inline-block;
     margin: 10px 10px 0 0;
@@ -17,24 +67,27 @@ a {
     border-radius: 4px;
     transition: background 0.2s;
 }
+
 a:hover {
     background: #f70808;
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background: #f8f8f8;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
+
 .footer-img {
     height: 40px;
 }
 
 .footer-titulo {
     display: block;
-    margin-top: 10px;
+    margin-top: 1 0px;
     color: #c10707;
+    padding-bottom: 5px;
 }
