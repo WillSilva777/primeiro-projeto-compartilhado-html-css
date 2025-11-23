@@ -20,3 +20,21 @@ a {
 a:hover {
     background: #f70808;
 }
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f8f8f8;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer img {
+    height: 40px;
+}
+
+.footer-titulo {
+    display: block;
+    margin-top: 10px;
+    color: #c10707;
+}
