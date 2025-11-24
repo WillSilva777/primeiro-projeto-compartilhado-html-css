@@ -1,5 +1,6 @@
 :root {
     --header-background-color:#fafafa;
+    --vermelho-do-site: #b81515;
 }
 
 * {
@@ -15,11 +16,23 @@ body {
 }
 
 .header {
-    padding: 20px 200px;
+    padding: 0px 200px;
     background-color: var(--header-background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header a {
+    background-color: var(--header-background-color);
+    color: black;
+}
+
+.header a:hover {
+    background-color: var(--header-background-color);
+    color: var(--vermelho-do-site);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .header-botoes {
@@ -38,9 +51,9 @@ body {
     width: 40%;
     height: 32px;
     font-size: large;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    box-shadow: 0px 0px 10px 0.5px rgb(153, 153, 153);
+    box-shadow: 0px 1px 10px 3px rgb(153, 153, 153);
 }
 
 .header input::placeholder {
@@ -93,10 +106,6 @@ body {
     background-color: #ce4444;
     cursor: pointer;
 }
-
-
-
-
 
 a {
     display: inline-block;

@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+#logo-header {
+    background-color: var(--header-background-color);
+}
+
 .header-botoes {
     margin-right: 30px;
     display: flex;
@@ -30,13 +34,6 @@
 .header input::placeholder {
     opacity: 30%;
 }
-
-#header-logo {
-    width: 200px;
-    background-color: var(--header-background-color);
-    border: var(--header-background-color);
-}
-
 
 .containers{
     display: flex;
