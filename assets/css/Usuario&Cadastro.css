@@ -1,0 +1,54 @@
+:root {
+    --header-background-color:#252525;
+    --footer-background-color: #252525;
+    --vermelho-do-site: #b81515;
+    --body-background-color: #181818;
+    --input-bacground-color: #414141;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.login label{
+    color: #ff0000;
+    opacity: 65%;
+    font-weight: bolder;
+}
+
+.login input {
+    padding: 20px;
+    background-color: var(--input-bacground-color);
+    border: 1px solid var(--vermelho-do-site);
+    border-radius: 4px;
+    transition: outline;
+}
+
+.login input:focus {
+    outline: 1.9px solid var(--vermelho-do-site);
+}
+
+.login button {
+    padding: 10px;
+    width: 300px;
+    margin: 50px auto;
+    font-size: 20px;
+    background-color: var(--vermelho-do-site);
+    border: none;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+.login button:hover {
+    background-color: rgb(252, 79, 79);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.288);
+}

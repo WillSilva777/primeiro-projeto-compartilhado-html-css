@@ -1,6 +1,9 @@
 :root {
-    --header-background-color:#fafafa;
+    --header-background-color:#252525;
+    --footer-background-color: #252525;
     --vermelho-do-site: #b81515;
+    --body-background-color: #181818;
+    --input-bacground-color: #414141;
 }
 
 * {
@@ -9,51 +12,69 @@
 }
 
 body {
-    background-color: #181818;
+    background-color: var(--body-background-color);
     min-height: 100vh;
     margin: 0;
     font-family: "koboto", sans-serif;
 }
 
+
+/* lembrar de retirar o fundo de sombra da logo (VINCIUS) */
 .header {
-    padding: 0px 200px;
+    padding: 0px 180px;
     background-color: var(--header-background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: var(--vermelho-do-site) solid 2px;
 }
 
 .header a {
     background-color: var(--header-background-color);
-    color: black;
+    color: white;
 }
 
 .header a:hover {
     background-color: var(--header-background-color);
     color: var(--vermelho-do-site);
-    transition: 0.2s;
-    cursor: pointer;
 }
 
 .header-botoes {
-    margin-right: 30px;
     display: flex;
     font-size: x-large;
     align-items: center;
+    gap: 15px;
 }
 
 .header-botoes a {
-    margin-right: 30px;
+    display: flex;
+    gap: 10px;
+    background-color: var(--vermelho-do-site);
+    transition: background 0.2s ease, transform 0.2s ease;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 1px var(--input-bacground-color);
+}
+
+.header-botoes a:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(1px 1px 8px var(--vermelho-do-site));
+}
+
+.header-botoes a img{
+    width: 30px;
 }
 
 .header input {
     margin: 45px;
     width: 40%;
     height: 32px;
+    background-color: var(--input-bacground-color);
     font-size: large;
     border-radius: 5px;
     border: none;
-    box-shadow: 0px 1px 10px 3px rgb(153, 153, 153);
+    box-shadow: 0px 1px 5px 3px #333333;
 }
 
 .header input::placeholder {
@@ -62,6 +83,15 @@ body {
 
 #header-logo {
     width: 200px;
+}   
+
+#barra-de-pesquisa {
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#barra-de-pesquisa:focus {
+    outline: none;
+    box-shadow: 0.5px 0.5px 6px 0.5px var(--vermelho-do-site);
 }
 
 .cabecalho {
@@ -69,7 +99,6 @@ body {
     display: flex;
     justify-content: space-around;
     background: linear-gradient(135deg, rgb(250, 250, 250) 0%, #ffffff 100%);
-    
 }
 
 .cabecalho__logo {
@@ -125,10 +154,11 @@ a:hover {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #f8f8f8;
+    background-color: var(--footer-background-color);
     position: fixed;
     width: 100%;
     bottom: 0;
+    border-top: 2px solid var(--vermelho-do-site);
 }
 
 .footer-img {
