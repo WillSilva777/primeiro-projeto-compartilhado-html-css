@@ -11,7 +11,7 @@
     margin: 0px;
 }
 
-.login {
+form {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -19,13 +19,13 @@
     margin: 0 auto;
 }
 
-.login label{
+form label{
     color: #ff0000;
     opacity: 65%;
     font-weight: bolder;
 }
 
-.login input {
+form input {
     padding: 20px;
     background-color: var(--input-bacground-color);
     border: 1px solid var(--vermelho-do-site);
@@ -33,11 +33,11 @@
     transition: outline;
 }
 
-.login input:focus {
+form input:focus {
     outline: 1.9px solid var(--vermelho-do-site);
 }
 
-.login button {
+#botao-login {
     padding: 10px;
     width: 300px;
     margin: 50px auto;
@@ -48,7 +48,7 @@
     transition: background 0.2s ease-in-out;
 }
 
-.login button:hover {
+#botao-login:hover {
     background-color: rgb(252, 79, 79);
     box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.288);
 }
