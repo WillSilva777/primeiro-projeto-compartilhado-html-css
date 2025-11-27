@@ -171,3 +171,201 @@ footer {
     color: #c10707;
     padding-bottom: 5px;
 }
+
+.preco_pix{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, rgba(184,21,21,0.98) 0%, rgba(230,70,70,0.98) 100%);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    box-shadow: 0 6px 18px rgba(184,21,21,0.22);
+    border: 2px solid rgba(0,0,0,0.12);
+}
+
+.preco_pix .pix-badge{
+    background: #ffffff;
+    color: var(--vermelho-do-site);
+    font-weight: 900;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+    text-transform: uppercase;
+}
+
+.preco_pix .valor{
+    font-size: 1.35rem;
+    margin-left: 4px;
+    letter-spacing: 0.4px;
+}
+
+.preco_pix .preco-antigo{
+    text-decoration: line-through;
+    opacity: 0.85;
+    font-size: 0.95rem;
+    margin-left: 8px;
+    color: #ffd7d7;
+}
+
+.preco_pix:hover{
+    transform: translateY(-3px);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 10px 24px rgba(184,21,21,0.32);
+}
+
+.titulo_produto{
+    display: block;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 8px 0 6px 0;
+    letter-spacing: 0.2px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+    max-width: 100%;
+}
+
+.titulo_produto small{
+    display: block;
+    color: #f2f2f2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0.92;
+    margin-top: 4px;
+}
+
+.titulo_produto a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.titulo_produto a:hover{
+    color: var(--vermelho-do-site);
+    text-decoration: underline;
+}
+
+.titulo_produto.truncate{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Layout de produtos: grid responsivo com no máximo 3 colunas */
+.containers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.anuncio{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.produto{
+    background: transparent;
+    border-radius: 8px;
+    padding: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img_produto{
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.descricao_produto{
+    color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Evita rolagem horizontal causada por conteúdo largo */
+html, body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1000px){
+    .containers{ grid-template-columns: repeat(2, 1fr); max-width: 960px; }
+    .img_produto{ width: 220px; }
+}
+
+@media (max-width: 640px){
+    .containers{ grid-template-columns: 1fr; padding: 0 12px; }
+    .img_produto{ width: 100%; height: auto; }
+}
+
+/* Elemento HTML que força a quebra de linha no grid */
+.break-row{
+    grid-column: 1 / -1;
+    height: 0;
+}
+
+/* Botão voltar usado nas páginas internas */
+.btn-voltar{
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid var(--vermelho-do-site);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.btn-voltar:hover{
+    background: var(--vermelho-do-site);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* Agrupamento do logo + botão no header (alinha à esquerda) */
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Ajuste para que o input do header não quebre o alinhamento */
+.header input{
+    flex: 1 1 40%;
+    max-width: 600px;
+}
+
+/* Variante do botão quando colocado entre os botões do header (direita) */
+.header-botoes .btn-voltar{
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+.header-botoes .btn-voltar:hover{
+    background: rgba(255,255,255,0.04);
+    color: #fff;
+}

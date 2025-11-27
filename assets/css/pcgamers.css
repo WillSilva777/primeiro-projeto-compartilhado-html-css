@@ -35,24 +35,6 @@
     opacity: 30%;
 }
 
-.containers{
-    display: flex;
-    justify-content: space-around;
-}
-
-.anuncio{
-    margin: 20px 40px;    
-    background-color: #fff;
-    width: 30%;
-    border-radius: 16px;  
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
 .produto{
     display: flex;
     justify-content: center;
