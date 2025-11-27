@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/backgroud.css">
+    <link rel="stylesheet" href="assets/css/Usuario&Cadastro.css">
+    <title>Cadastro</title>
 </head>
-
 <body>
     <div class="header">
-        <a href="index.html" id="logo-link"><img src="assets/images/logo-escrita-branca.png"
-                alt="red-dragon-tech" id="header-logo"></a>
+        <a href="index.html" class="logo-link"><img src="assets/images/logo-escrita-branca.png"
+            alt="red-dragon-tech" id="header-logo"></a>
         <input type="text" name="procurar itens" placeholder=" Pesquisar Produtos  🔍" id="barra-de-pesquisa">
         <div class="header-botoes">
+            <button class="btn-voltar" onclick="history.back()" title="Voltar">←</button>
             <a href="usuario-conta.html"><img src="assets/images/icone-login-branco.png" alt="usuario"> Minha
                 Conta</a>
             <a href="favoritos.html"><img src="assets/images/icone-coracao-branco.png" alt="coracao"> Favoritos</a>
@@ -22,32 +21,15 @@
                 Carrinho</a>
         </div>
     </div>
-    <section>
-        <div class="itens">
-            <a class="itens__especificos" href="./pcgamer.html">PCS GAMERS</a>
-            <a class="itens__especificos" href="./notebook.html">NOTEBOOKS</a>
-            <a class="itens__especificos" href="./hardware.html">HARDWARES</a>
-            <a class="itens__especificos" href="./monitores.html">MONITORES</a>
-            <a class="itens__especificos" href="./periferico.html">PERIFERICOS</a>
-        </div>
+    
 
-    </section>
-    <!--
-    <h1>Bem-vindo à loja!</h1>
-    <p>Esta é a página inicial do nosso site!</p>
-    <a href="produtos.html">Ver Produtos</a>
-    <a href="promocoes.html">Promoções</a>
-    <a href="contato.html">Entre em contato conosco!</a>
--->
 
-</body>
-
-<footer class="footer-pagamento">
+    <footer class="footer-pagamento">
     <p class="footer-titulo">Formas de pagamento</p>
     <div class="footer-formas">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png" alt="Visa"
             title="Visa" class="footer-img">
-        <img src="assets/images/MasterCard_Logo.svg.png" alt="Mastercard" title="Mastercard" class="footer-img">
+        <img src="/assets/images/MasterCard_Logo.svg.png" alt="Mastercard" title="Mastercard" class="footer-img">
         <img src="assets/images/American-Express-Logo.png" alt="American Express" title="American Express"
             class="footer-img">
         <img src="assets/images/PIX-1-1200x900.webp" alt="Pix" title="Pix" class="footer-img">
@@ -55,5 +37,5 @@
         <img src="assets/images/nupay.png" alt="Nupay" title="Nupay" class="footer-img">
     </div>
 </footer>
-
+</body>
 </html>
