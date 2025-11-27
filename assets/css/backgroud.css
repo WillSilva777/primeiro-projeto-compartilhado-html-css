@@ -13,6 +13,11 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: "koboto", sans-serif;
+    padding-bottom: 80px;
+}
+
+#logo-header {
+    background-color: var(--header-background-color);
 }
 
 .header {
@@ -140,4 +145,62 @@ footer {
     margin-top: 1 0px;
     color: #c10707;
     padding-bottom: 5px;
+}
+
+.containers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.anuncio{
+    margin: 20px 40px;    
+    background-color: #fff;
+    width: 30%;
+    border-radius: 16px;  
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_produto{
+    padding: 2% 0;
+    width: 300px;
+}
+
+.descricao_produto{
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.containers_hardware{
+    display: flex;
+    align-content: space-around;    
+    flex-wrap: wrap;
+}
+
+.anuncio_hardware {
+    margin: 20px 40px;    
+    background-color: #fff;
+    width: 29%;
+    border-radius: 16px;  
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.img_produto_hardware{
+    width: 200px;
 }
