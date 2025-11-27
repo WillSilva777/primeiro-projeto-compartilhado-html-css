@@ -1,19 +1,20 @@
-.containers{
-    display: flex;
-    justify-content: space-around;
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 100px 20px;
 }
 
-.anuncio{
-    margin: 20px 40px;    
+.anuncio {
     background-color: #fff;
-    width: 30%;
-    border-radius: 16px;  
-    height: 600px;
+    border-radius: 16px;
+    padding: 16px;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .produto{
