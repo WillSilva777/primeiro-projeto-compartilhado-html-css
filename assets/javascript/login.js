@@ -6,7 +6,7 @@ function logar (){
 
     if (login=="admin"&&senha=="admin") {
         alert("Login concluído com sucesso");
-        location.href = "https://willsilva777.github.io/primeiro-projeto-compartilhado-html-css/index.html";
+        location.href = "../../index.html";
     } else {
         alert("Usuário ou senha incorretos");
     }
