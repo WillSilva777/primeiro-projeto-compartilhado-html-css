@@ -11,6 +11,20 @@
     margin: 0px;
 }
 
+.form-title {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 15px;
+    align-items: center;
+    margin: 70px auto;
+}
+
+.form-title h3 {
+    color: var(--vermelho-do-site);
+
+}
+
 form {
     display: flex;
     flex-direction: column;

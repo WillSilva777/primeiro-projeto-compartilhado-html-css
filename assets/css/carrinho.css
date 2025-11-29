@@ -1,0 +1,40 @@
+:root {
+    --header-background-color:#252525;
+    --footer-background-color: #252525;
+    --vermelho-do-site: #b81515;
+    --body-background-color: #181818;
+    --input-bacground-color: #414141;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.texto {
+    margin-top: 150px;
+}
+
+h1 {
+    margin: 10px auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    color: var(--vermelho-do-site);
+}
+
+h3 {
+    margin: 100px auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    color: var(--vermelho-do-site);
+}
+
+.texto a {
+    margin: 0;
+    padding: 0px;
+    padding-left: 9px;
+    border: none;
+    background-color: var(--body-background-color);
+}
